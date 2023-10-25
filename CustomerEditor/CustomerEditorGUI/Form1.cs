@@ -20,7 +20,7 @@ namespace CustomerEditorGUI
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadCustomerList();
-           
+
             dataGridView1.DesignUCLDataGridView();
         }
 
