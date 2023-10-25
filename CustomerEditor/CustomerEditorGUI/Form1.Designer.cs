@@ -34,20 +34,21 @@
             lastNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             customerBindingSource = new BindingSource(components);
             groupBox1 = new GroupBox();
+            btn_delete = new Button();
             label4 = new Label();
             label3 = new Label();
-            label1 = new Label();
-            btn_delete = new Button();
             btn_edit = new Button();
+            label1 = new Label();
             tb_phone = new TextBox();
-            tb_email = new TextBox();
+            tb_firstname = new TextBox();
             tb_lastname = new TextBox();
             label2 = new Label();
-            tb_firstname = new TextBox();
+            tb_email = new TextBox();
             menuStrip1 = new MenuStrip();
             filerToolStripMenuItem = new ToolStripMenuItem();
             opretKundeToolStripMenuItem = new ToolStripMenuItem();
             afslutToolStripMenuItem = new ToolStripMenuItem();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)customerBindingSource).BeginInit();
             groupBox1.SuspendLayout();
@@ -117,6 +118,16 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Kunde Detaljer";
             // 
+            // btn_delete
+            // 
+            btn_delete.Location = new Point(134, 187);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(112, 34);
+            btn_delete.TabIndex = 9;
+            btn_delete.Text = "Slet";
+            btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.Click += btndelete_Click;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -135,25 +146,6 @@
             label3.TabIndex = 4;
             label3.Text = "Email :";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(34, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(85, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Fornavn :";
-            // 
-            // btn_delete
-            // 
-            btn_delete.Location = new Point(134, 187);
-            btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(112, 34);
-            btn_delete.TabIndex = 9;
-            btn_delete.Text = "Slet";
-            btn_delete.UseVisualStyleBackColor = true;
-            btn_delete.Click += btndelete_Click;
-            // 
             // btn_edit
             // 
             btn_edit.Location = new Point(379, 187);
@@ -164,6 +156,15 @@
             btn_edit.UseVisualStyleBackColor = true;
             btn_edit.Click += btn_edit_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(34, 42);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Fornavn :";
+            // 
             // tb_phone
             // 
             tb_phone.Location = new Point(134, 150);
@@ -171,12 +172,13 @@
             tb_phone.Size = new Size(357, 31);
             tb_phone.TabIndex = 7;
             // 
-            // tb_email
+            // tb_firstname
             // 
-            tb_email.Location = new Point(134, 113);
-            tb_email.Name = "tb_email";
-            tb_email.Size = new Size(357, 31);
-            tb_email.TabIndex = 5;
+            tb_firstname.Location = new Point(134, 39);
+            tb_firstname.Name = "tb_firstname";
+            tb_firstname.Size = new Size(357, 31);
+            tb_firstname.TabIndex = 1;
+            tb_firstname.Text = "didie";
             // 
             // tb_lastname
             // 
@@ -195,13 +197,12 @@
             label2.TabIndex = 2;
             label2.Text = "Efternavn :";
             // 
-            // tb_firstname
+            // tb_email
             // 
-            tb_firstname.Location = new Point(134, 39);
-            tb_firstname.Name = "tb_firstname";
-            tb_firstname.Size = new Size(357, 31);
-            tb_firstname.TabIndex = 1;
-            tb_firstname.Text = "didie";
+            tb_email.Location = new Point(134, 113);
+            tb_email.Name = "tb_email";
+            tb_email.Size = new Size(357, 31);
+            tb_email.TabIndex = 5;
             // 
             // menuStrip1
             // 
@@ -235,11 +236,21 @@
             afslutToolStripMenuItem.Size = new Size(306, 34);
             afslutToolStripMenuItem.Text = "&Afslut";
             // 
+            // button1
+            // 
+            button1.Location = new Point(673, 327);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1210, 808);
+            Controls.Add(button1);
             Controls.Add(groupBox1);
             Controls.Add(dataGridView1);
             Controls.Add(menuStrip1);
@@ -278,5 +289,6 @@
         private ToolStripMenuItem afslutToolStripMenuItem;
         private Button btn_edit;
         private Button btn_delete;
+        private Button button1;
     }
 }
