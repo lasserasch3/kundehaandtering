@@ -1,0 +1,12 @@
+CustomerEditor/.vs/
+CustomerEditor/Abstractions/bin/
+CustomerEditor/Abstractions/obj/
+CustomerEditor/BusinessLogic/bin/
+CustomerEditor/BusinessLogic/obj/
+CustomerEditor/CustomerEditorGUI/bin/
+
+CustomerEditor/CustomerEditorGUI/obj/
+CustomerEditor/Repositories/bin/
+CustomerEditor/UnitTests/bin/
+CustomerEditor/UnitTests/obj/
+CustomerEditor/Repositories/obj/
